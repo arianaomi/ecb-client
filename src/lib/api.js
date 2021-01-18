@@ -15,13 +15,11 @@ export const getCars = async (email, password) => {
 export const createCar = async data => {
   const url = '/cars'
   const response = await api.post(url, data)
-  console.log(response)
   return response
 }
 
 export const updateCar = async (id, data) => {
   const url = `/cars/${id}`
   const response = await api.patch(url, data)
-  console.log(response)
   return response
 }
