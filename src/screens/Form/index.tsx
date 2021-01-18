@@ -9,9 +9,7 @@ export default function Form () {
 
   const handleForm = async (data: object) => {
     try {
-     console.log(data)
      const response = await createCar(data)
-     console.log(response)
      if (response) {
       setMessage('Guardado exitosamente') 
      } 
