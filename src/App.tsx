@@ -1,11 +1,24 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './styles/App.scss'
 
-function App () {
+import Home from './screens/Home'
+import Form from './screens/Form'
+
+const App: React.FC = () => {
   return (
-    <div className='App'>
-      <h1>hi</h1>
-    </div>
+    <Router>
+      <div className='App'>
+        <Switch>
+          <Route path='/' exact>
+            <Home />
+          </Route>
+          <Route path='/form' exact>
+            <Form/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   )
 }
 

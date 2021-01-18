@@ -1,0 +1,13 @@
+
+// BREAK POINTS
+@mixin on-tablet {
+  @media only screen and (min-width: 769px) and (max-width: 1024px - 1) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
