@@ -1,7 +1,7 @@
 
 import axios from 'axios'
 import _ from 'lodash'
-const baseURL = process.env.REACT_APP_BASE_URL
+const baseURL = 'https://ecb-server.vercel.app/'
 
 const api = axios.create({ baseURL })
 
